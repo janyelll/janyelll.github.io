@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Janyelll | Computer & Robotics Engineer</title>
+  <title>Jana Alqubelat | Computer & Robotics Engineer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -25,7 +25,7 @@
 <body class="bg-bmwDark text-slate-100 font-sans antialiased selection:bg-rosePetal selection:text-white relative min-h-screen">
 
   <!-- BMW M-Stripe Performance Top Bar -->
-  <div class="h-1.5 w-full flex">
+  <div class="h-1.5 w-full flex sticky top-0 z-50">
     <div class="h-full w-1/3 bg-bmwLightBlue"></div>
     <div class="h-full w-1/3 bg-bmwBlue"></div>
     <div class="h-full w-1/3 bg-rosePetal"></div>
@@ -35,25 +35,26 @@
   <header class="max-w-5xl mx-auto px-6 py-8 flex justify-between items-center border-b border-slate-800/80">
     <div class="text-xl font-bold tracking-tight text-white flex items-center gap-1.5">
       <span class="text-rosePetal font-mono">&lt;</span>
-      <span>Janyelll</span>
+      <span>Jana</span>
       <span class="text-bmwLightBlue font-mono">/&gt;</span>
-      <span class="ml-1 text-[10px] font-mono px-1.5 py-0.5 rounded bg-rose-500/10 text-rose-300 border border-rose-500/30">M-ENG</span>
+      <span class="ml-1 text-[10px] font-mono px-1.5 py-0.5 rounded bg-rose-500/10 text-rose-300 border border-rose-500/30">GJU • M-ENG</span>
     </div>
     <div class="flex gap-6 text-sm font-medium text-slate-300">
-      <a href="#about" class="hover:text-roseSoft transition-colors">About</a>
+      <a href="#about" class="hover:text-roseSoft transition-colors">About &amp; CV</a>
       <a href="#projects" class="hover:text-bmwLightBlue transition-colors">Projects</a>
-      <a href="https://github.com/janyelll" target="_blank" class="hover:text-rosePetal transition-colors">GitHub</a>
+      <a href="https://www.linkedin.com/in/jana-alqubelat-4576a02b9" target="_blank" class="hover:text-rosePetal transition-colors">LinkedIn</a>
+      <a href="https://github.com/janyelll" target="_blank" class="hover:text-cyan-400 transition-colors">GitHub</a>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="about" class="max-w-5xl mx-auto px-6 py-20 relative">
+  <section class="max-w-5xl mx-auto px-6 py-20 relative">
     <div class="absolute -top-10 left-1/4 w-72 h-72 bg-bmwBlue/10 rounded-full blur-3xl -z-10"></div>
     <div class="absolute top-10 right-1/4 w-72 h-72 bg-rosePetal/10 rounded-full blur-3xl -z-10"></div>
 
     <div class="inline-flex items-center gap-2 px-3.5 py-1.5 mb-6 text-xs font-mono font-medium tracking-wide text-roseSoft bg-rose-950/40 border border-rose-500/30 rounded-full shadow-sm">
       <span class="w-2 h-2 rounded-full bg-rosePetal animate-pulse"></span>
-      Computer Engineering • AI Track • Robotics Passionate
+      German Jordanian University (GJU) • Computer Engineering • AI Track
     </div>
 
     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
@@ -63,9 +64,19 @@
       </span>
     </h1>
 
-    <p class="text-lg md:text-xl text-slate-300 max-w-2xl leading-relaxed">
-      Merging precision hardware with intelligent control. Passionate about automotive intelligence, low-latency firmware, and turning high stall currents into pure deterministic performance.
+    <p class="text-lg md:text-xl text-slate-300 max-w-2xl leading-relaxed mb-8">
+      Passionate Computer Engineering undergraduate bridging low-latency hardware, embedded firmware, and intelligent perception systems. Driven by automotive tech, autonomous machines, and collaborative innovation.
     </p>
+
+    <!-- Quick Action Buttons -->
+    <div class="flex flex-wrap gap-4 items-center">
+      <a href="#about" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-rosePetal to-bmwBlue text-white font-medium text-sm hover:opacity-90 transition-opacity shadow-lg shadow-rose-500/20">
+        View Full Background &amp; CV ↓
+      </a>
+      <a href="mailto:ohjana454@gmail.com" class="px-5 py-2.5 rounded-xl border border-slate-700 bg-slate-900/60 text-slate-300 font-medium text-sm hover:border-rosePetal/50 transition-colors">
+        Get In Touch
+      </a>
+    </div>
   </section>
 
   <!-- Projects Section -->
@@ -74,7 +85,7 @@
       <h2 class="text-2xl font-bold text-white flex items-center gap-2">
         <span class="text-rosePetal font-mono">01.</span> Engineering Case Study
       </h2>
-      <span class="text-xs font-mono text-bmwLightBlue">High-Torque Performance</span>
+      <span class="text-xs font-mono text-bmwLightBlue">Autonomous Combat Platform</span>
     </div>
 
     <!-- Project Card: Sumo Robot -->
@@ -82,12 +93,12 @@
       <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
         <h3 class="text-2xl font-bold text-white">Autonomous 3kg Mega Sumo Combat Robot</h3>
         <span class="text-xs font-mono bg-bmwBlue/10 text-bmwLightBlue border border-bmwBlue/30 px-3 py-1 rounded-full">
-          Hardware Failure Analysis & Redesign
+          Hardware Failure Analysis &amp; Redesign
         </span>
       </div>
 
       <p class="text-slate-300 text-base leading-relaxed mb-6">
-        Engineered a high-speed, high-torque autonomous combat platform. Under aggressive direction switching, high stall currents from the JSUMO Symtec Q gearmotors caused a catastrophic MOSFET thermal runaway on the original XMotion controller.
+        Engineered an autonomous high-torque combat platform. Under aggressive direction switching, high stall currents from the JSUMO Symtec Q gearmotors caused a catastrophic MOSFET thermal runaway on the original XMotion controller.
       </p>
 
       <div class="bg-bmwDark/90 border border-slate-800/90 rounded-xl p-5 mb-6">
@@ -109,10 +120,125 @@
     </div>
   </section>
 
+  <!-- About / CV Section -->
+  <section id="about" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-800/80">
+    <div class="flex flex-wrap items-center justify-between gap-4 mb-10">
+      <div>
+        <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+          <span class="text-rosePetal font-mono">02.</span> About Me &amp; Background
+        </h2>
+        <p class="text-sm text-slate-400 mt-1">Computer Engineering undergraduate at German Jordanian University (GJU)</p>
+      </div>
+      
+      <!-- Direct Contact & CV Download -->
+      <div class="flex flex-wrap gap-3">
+        <a href="https://www.linkedin.com/in/jana-alqubelat-4576a02b9" target="_blank" class="text-xs font-mono px-3.5 py-2 rounded-lg bg-bmwBlue/20 border border-bmwBlue/40 text-bmwLightBlue hover:bg-bmwBlue/30 transition-colors">
+          LinkedIn Profile ↗
+        </a>
+        <a href="mailto:ohjana454@gmail.com" class="text-xs font-mono px-3.5 py-2 rounded-lg bg-rose-500/10 border border-rose-500/30 text-rose-300 hover:bg-rose-500/20 transition-colors">
+          ohjana454@gmail.com ✉
+        </a>
+      </div>
+    </div>
+
+    <!-- Grid Layout for CV Sections -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Education Card -->
+      <div class="bg-cardBg/60 border border-slate-800 rounded-2xl p-6">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-lg">🎓</span>
+          <h3 class="text-lg font-bold text-white">Education</h3>
+        </div>
+        <div>
+          <h4 class="font-semibold text-roseSoft">Bachelor of Science in Computer Engineering</h4>
+          <p class="text-sm text-slate-300 font-medium">German Jordanian University (GJU)</p>
+          <span class="text-xs font-mono text-slate-500">Expected Graduation: 2028 • Madaba, Jordan</span>
+          <p class="text-xs text-slate-400 mt-3 leading-relaxed">
+            Studying in a competitive, bilingual academic environment focusing on applied sciences and German collaboration. Key coursework includes Computer Architecture, Embedded Systems, Software Engineering, and Digital Logic Design.
+          </p>
+        </div>
+      </div>
+
+      <!-- Leadership & Experience Card -->
+      <div class="bg-cardBg/60 border border-slate-800 rounded-2xl p-6">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-lg">⚡</span>
+          <h3 class="text-lg font-bold text-white">Leadership &amp; Community</h3>
+        </div>
+        <div class="space-y-4">
+          <div>
+            <h4 class="font-semibold text-slate-200">Secretary &amp; Financial Director</h4>
+            <p class="text-xs font-mono text-bmwLightBlue">Google Developer Group (GDG Madaba) • Jan 2024 - Present</p>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+              Managing budgets, event operations, and strategic coordination with Google and local partners for tech conferences and DevFest events.
+            </p>
+          </div>
+          <div class="pt-2 border-t border-slate-800/60">
+            <h4 class="font-semibold text-slate-200">Volunteer Educator</h4>
+            <p class="text-xs font-mono text-rosePetal">UNICEF • 2019</p>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+              Designed workshops to introduce children to foundational technology and digital literacy skills.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Highlights & Competitions Card -->
+      <div class="bg-cardBg/60 border border-slate-800 rounded-2xl p-6">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-lg">🏆</span>
+          <h3 class="text-lg font-bold text-white">Honors &amp; Competitions</h3>
+        </div>
+        <ul class="space-y-3 text-xs text-slate-300 leading-relaxed">
+          <li class="flex items-start gap-2">
+            <span class="text-rosePetal font-bold">★</span>
+            <div>
+              <strong class="text-white">Winner - First Place:</strong> King Hussein Robotics Camps (Aqaba). Designed and executed a high-performance robotic platform outperforming regional teams.
+            </div>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-rosePetal font-bold">★</span>
+            <div>
+              <strong class="text-white">University Representative:</strong> International 3D Modeling Competition (Germany, Nov 2024). Selected to represent GJU in cross-cultural rapid prototyping.
+            </div>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-rosePetal font-bold">★</span>
+            <div>
+              <strong class="text-white">IEEE R8 MESYP23:</strong> Middle East Student and Young Professional Congress.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Advanced Technical Training Card -->
+      <div class="bg-cardBg/60 border border-slate-800 rounded-2xl p-6">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-lg">🧠</span>
+          <h3 class="text-lg font-bold text-white">Specialized Technical Training</h3>
+        </div>
+        <div class="space-y-3">
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+            <h4 class="font-semibold text-sm text-bmwLightBlue">Cognitive Vision Systems for Autonomous Machines</h4>
+            <span class="text-xs font-mono text-slate-500">Hochschule Trier • Sept 2024</span>
+            <p class="text-xs text-slate-400 mt-1">Computer vision, machine perception, and real-time visual data processing for intelligent robotics.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+            <h4 class="font-semibold text-sm text-roseSoft">Database-Driven Web Applications</h4>
+            <span class="text-xs font-mono text-slate-500">Frankfurt University of Applied Sciences</span>
+            <p class="text-xs text-slate-400 mt-1">Dynamic backend architectures, relational databases, and secure web application deployments.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="max-w-5xl mx-auto px-6 py-12 text-center text-sm text-slate-500 border-t border-slate-800/80 mt-12 flex flex-col md:flex-row justify-between items-center gap-4">
-    <div>Designed & Built by Janyelll</div>
-    <div class="text-xs font-mono text-slate-600">Inspired by Precision Engineering & Motorsport</div>
+    <div>Designed &amp; Built by Jana Alqubelat • German Jordanian University</div>
+    <div class="text-xs font-mono text-slate-600">+962 7 7992 4793 • Madaba, Jordan</div>
   </footer>
 
 </body>
