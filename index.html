@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Janyelll | Computer & Robotics Engineer</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- DotLottie / Lottie Player for High-End Realistic Animations -->
-  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-  
   <script>
     tailwind.config = {
       theme: {
@@ -25,60 +22,144 @@
     }
   </script>
   <style>
-    /* Smooth Real-world Driving & Parking Track */
-    @keyframes realisticDriveAndPark {
+    /* Full Page Cruise & Smooth Corner Park */
+    @keyframes sportsCarRoute {
       0% {
-        transform: translate(-120vw, 25vh) scale(0.7) rotate(-5deg);
+        transform: translate(-300px, 35vh) scale(0.75) rotate(0deg);
         opacity: 0;
       }
-      25% {
-        transform: translate(25vw, 55vh) scale(1) rotate(4deg);
+      15% {
         opacity: 1;
+        transform: translate(25vw, 65vh) scale(1) rotate(6deg);
       }
-      50% {
-        transform: translate(65vw, 20vh) scale(1.1) rotate(-3deg);
+      45% {
+        transform: translate(75vw, 25vh) scale(1.1) rotate(-8deg);
       }
       75% {
-        transform: translate(40vw, 75vh) scale(0.95) rotate(2deg);
+        transform: translate(35vw, 80vh) scale(0.95) rotate(4deg);
       }
       92% {
-        transform: translate(calc(100vw - 220px), calc(100vh - 150px)) scale(0.9) rotate(-1deg);
+        transform: translate(calc(100vw - 260px), calc(100vh - 160px)) scale(0.9) rotate(-1deg);
       }
       100% {
-        transform: translate(calc(100vw - 190px), calc(100vh - 130px)) scale(0.85) rotate(0deg);
+        transform: translate(calc(100vw - 230px), calc(100vh - 140px)) scale(0.85) rotate(0deg);
         opacity: 1;
       }
     }
 
-    .realistic-car-container {
+    .sports-car-stage {
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 50;
-      animation: realisticDriveAndPark 4.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+      z-index: 9999;
+      animation: sportsCarRoute 5.5s cubic-bezier(0.25, 0.9, 0.3, 1) forwards;
       pointer-events: auto;
       cursor: pointer;
-      filter: drop-shadow(0 15px 25px rgba(244, 114, 182, 0.25));
-      transition: transform 0.4s ease;
+      filter: drop-shadow(0 15px 25px rgba(244, 114, 182, 0.35));
+      transition: transform 0.3s ease;
     }
 
-    .realistic-car-container:hover {
-      transform: translate(calc(100vw - 190px), calc(100vh - 140px)) scale(0.95) !important;
+    .sports-car-stage:hover {
+      transform: translate(calc(100vw - 230px), calc(100vh - 150px)) scale(0.92) !important;
+    }
+
+    @keyframes nitroGlow {
+      0%, 100% { opacity: 0.4; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.3); }
+    }
+    .nitro-flame {
+      animation: nitroGlow 0.8s infinite ease-in-out;
+      transform-origin: 20px 85px;
+    }
+
+    @keyframes wheelSpin {
+      100% { transform: rotate(360deg); }
+    }
+    .spinning-wheel {
+      animation: wheelSpin 0.6s linear infinite;
+      transform-box: fill-box;
+      transform-origin: center;
     }
   </style>
 </head>
 <body class="bg-bmwDark text-slate-100 font-sans antialiased selection:bg-rosePetal selection:text-white relative min-h-screen overflow-x-hidden">
 
-  <!-- Realistic Animated 3D/Vector Performance Car -->
-  <div class="realistic-car-container" title="Autonomous Precision Drive 🏎️💨">
-    <dotlottie-player 
-      src="https://assets2.lottiefiles.com/packages/lf20_m9zragkd.json" 
-      background="transparent" 
-      speed="1" 
-      style="width: 220px; height: 140px;" 
-      loop 
-      autoplay>
-    </dotlottie-player>
+  <!-- Real Sleek Sports Car with Brown-Haired Driver -->
+  <div class="sports-car-stage" title="Engineered for Precision 🏎️💨">
+    <svg width="240" height="130" viewBox="0 0 260 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <!-- Metallic Body Gradient -->
+        <linearGradient id="bodyGradient" x1="20" y1="50" x2="240" y2="105" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#0f172a"/>
+          <stop offset="0.4" stop-color="#1e293b"/>
+          <stop offset="0.8" stop-color="#334155"/>
+          <stop offset="1" stop-color="#1e1b4b"/>
+        </linearGradient>
+
+        <!-- Windshield Gradient -->
+        <linearGradient id="glassGradient" x1="100" y1="30" x2="160" y2="70" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#4ba2ff" stop-opacity="0.6"/>
+          <stop offset="1" stop-color="#1c69d4" stop-opacity="0.2"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Pink Nitro Exhaust Flame -->
+      <path d="M5 88 C15 82, 30 85, 40 86 C30 92, 15 95, 5 88 Z" fill="#f472b6" class="nitro-flame" filter="blur(3px)" />
+
+      <!-- Cockpit & Windshield -->
+      <path d="M85 70 L110 32 L165 32 L185 70 Z" fill="url(#glassGradient)" stroke="#4ba2ff" stroke-width="1.5"/>
+
+      <!-- Brown-Haired Girl Driver -->
+      <!-- Long Brown Hair (Flowing Back) -->
+      <path d="M96 46 C86 52, 78 68, 76 80 C88 78, 102 76, 108 68 Z" fill="#4a2c11"/>
+      <path d="M90 54 C82 62, 80 72, 78 82" stroke="#6b3f19" stroke-width="2"/>
+      
+      <!-- Head / Profile -->
+      <circle cx="120" cy="46" r="11" fill="#fed7aa" />
+      <circle cx="124" cy="45" r="1.5" fill="#3e2723" /> <!-- Eye -->
+      
+      <!-- Brown Hair (Front / Bangs) -->
+      <path d="M110 38 C115 30, 130 28, 134 38 C128 42, 122 40, 116 44 C112 50, 106 56, 104 64 C102 54, 105 44, 110 38 Z" fill="#5c3818"/>
+
+      <!-- Racing Steering Wheel & Hands -->
+      <ellipse cx="146" cy="62" rx="3.5" ry="10" fill="#1c69d4" transform="rotate(-18 146 62)" stroke="#4ba2ff" stroke-width="1.5"/>
+      <circle cx="142" cy="60" r="3.5" fill="#fed7aa" />
+
+      <!-- Sleek Sportscar Aerodynamic Body -->
+      <path d="M28 92 C32 74, 52 70, 78 70 L205 70 C228 70, 246 80, 252 94 C254 100, 248 106, 238 106 L42 106 C32 106, 26 100, 28 92 Z" fill="url(#bodyGradient)" stroke="#f472b6" stroke-width="2"/>
+      
+      <!-- Aerodynamic Front Hood Curve -->
+      <path d="M185 70 L242 88 L250 96 L205 96 Z" fill="#1e293b" opacity="0.4"/>
+
+      <!-- BMW M-Style Performance Stripes -->
+      <rect x="95" y="86" width="60" height="3" fill="#4ba2ff" rx="1.5"/>
+      <rect x="95" y="91" width="50" height="3" fill="#1c69d4" rx="1.5"/>
+      <rect x="95" y="96" width="40" height="3" fill="#f472b6" rx="1.5"/>
+
+      <!-- LED Rose Laser Headlights -->
+      <polygon points="242,88 253,92 242,96" fill="#fbcfe8" filter="drop-shadow(0 0 8px #f472b6)"/>
+
+      <!-- Wheels with Rims -->
+      <!-- Rear Wheel -->
+      <g transform="translate(68, 106)">
+        <circle cx="0" cy="0" r="19" fill="#090d16" stroke="#4ba2ff" stroke-width="3"/>
+        <g class="spinning-wheel">
+          <line x1="-12" y1="0" x2="12" y2="0" stroke="#f472b6" stroke-width="2"/>
+          <line x1="0" y1="-12" x2="0" y2="12" stroke="#f472b6" stroke-width="2"/>
+        </g>
+        <circle cx="0" cy="0" r="6" fill="#f472b6"/>
+      </g>
+
+      <!-- Front Wheel -->
+      <g transform="translate(202, 106)">
+        <circle cx="0" cy="0" r="19" fill="#090d16" stroke="#4ba2ff" stroke-width="3"/>
+        <g class="spinning-wheel">
+          <line x1="-12" y1="0" x2="12" y2="0" stroke="#f472b6" stroke-width="2"/>
+          <line x1="0" y1="-12" x2="0" y2="12" stroke="#f472b6" stroke-width="2"/>
+        </g>
+        <circle cx="0" cy="0" r="6" fill="#f472b6"/>
+      </g>
+    </svg>
   </div>
 
   <!-- BMW M-Stripe Performance Top Bar -->
